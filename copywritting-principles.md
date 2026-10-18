@@ -1,0 +1,7 @@
+1. Nobody cares about this product, only about themselves. Talk the customer about himself!
+2. Keep things stupid & short. Made of simple words. Made of few words. Replace complex words with simple ones. Remove anything that's not essential. If a 12-year-old kid can’t understand your copy, it’s likely too complex.
+3. Be precise. You want your customers to visualize your product or its benefits. Avoid buzzwords. Use numbers and units instead of generic terms (”fast” → “in days”). Be as precise as possible, use words that will make people visualize how it feels to use your product/app.
+4. Avoid negations. It’s usually easier to read a positive sentence than a negative one.
+5. Use Needs & Desires. Customers buy stuff because of how it will make them feel. They feel it will improve their confidence, they feel it will make their life easier, they feel they will make more money, etc.
+6. Waterfall writing. Your headline has only one goal: Make people read the second sentence of your copy. Then, your second sentence has one job: Make people read the 3rd one. Your ability to make people keep reading your copy is what I call the Flow
+7. Product is a vehicle. Product exists to help people do something. An easy way to transform that into a copy is to use the Problem, Agitate, Solution. Remember what’s your customer's situation and why they don’t like it. Don’t sell a product, instead sell an easy way for them to reach their desired situation.
