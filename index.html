@@ -217,64 +217,90 @@
   }
   .shifts li {
     display: grid;
-    grid-template-columns: 2.6rem 1fr;
-    gap: 12px;
-    padding: 22px 0;
-    border-bottom: 1px solid var(--line);
-    transition: background .2s ease;
+    grid-template-columns: minmax(72px, 108px) 1fr;
+    gap: 26px;
+    align-items: center;
+    padding: 26px 0;
+    border-top: 1px solid var(--line);
+    transition: background .25s ease;
+  }
+  .shifts li:last-child { border-bottom: 1px solid var(--line); }
+  .shifts li:hover {
+    background: linear-gradient(90deg, rgba(215, 255, 77, .05), transparent 75%);
   }
   .shifts .num {
-    color: var(--accent);
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: .06em;
-    line-height: 2;
+    color: rgba(215, 255, 77, .22);
+    font-size: clamp(2.8rem, 7vw, 4.4rem);
+    font-weight: 800;
+    line-height: .85;
+    letter-spacing: -.05em;
     font-variant-numeric: tabular-nums;
+    transition: color .25s ease;
+  }
+  .shifts li.item {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  .shifts li.item.in {
+    opacity: 1;
+    transform: none;
+    transition: opacity .55s ease, transform .55s ease, background .25s ease;
+  }
+  @supports ((-webkit-text-stroke: 1px #000)) {
+    .shifts .num {
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(215, 255, 77, .5);
+    }
+    .shifts li:hover .num {
+      color: var(--accent);
+      -webkit-text-stroke-color: var(--accent);
+    }
   }
   .shifts .txt {
-    color: var(--body);
-    font-size: 1.15rem;
-    line-height: 1.6;
-  }
-  .shifts strong {
-    display: block;
-    margin-bottom: 4px;
     color: var(--text);
-    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.18rem;
-    font-weight: 700;
-    line-height: 1.4;
-  }
-
-  .fit {
-    margin: 0;
-    padding: 38px 40px;
-    border: 1px solid rgba(215, 255, 77, .24);
-    border-radius: 26px;
-    background: linear-gradient(140deg, rgba(215, 255, 77, .1), rgba(215, 255, 77, .02) 55%, rgba(255, 255, 255, .02));
-    color: #e9efdc;
-    font-size: 1.25rem;
-    line-height: 1.65;
-    text-wrap: pretty;
+    font-size: 1.3rem;
+    line-height: 1.45;
   }
 
   .faq .qa {
-    padding: 24px 0;
     border-top: 1px solid var(--line);
   }
   .faq .qa:last-child { border-bottom: 1px solid var(--line); }
-  .q {
-    margin: 0 0 10px;
+  .faq summary.q {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin: 0;
+    padding: 24px 0;
     color: var(--text);
     font-size: 1.18rem;
     font-weight: 700;
     line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
   }
-  .a {
+  .faq summary.q::-webkit-details-marker { display: none; }
+  .faq summary.q::after {
+    content: "+";
+    flex-shrink: 0;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  .faq details[open] summary.q::after { content: "\2212"; }
+  .faq .a {
     margin: 0;
+    padding: 0 0 26px;
     color: var(--body);
     font-size: 1.1rem;
     line-height: 1.7;
+  }
+  .faq details[open] .a { animation: fade .3s ease; }
+  @keyframes fade {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: none; }
   }
 
   .final {
@@ -323,8 +349,9 @@
     main { padding: 76px 20px 96px; }
     section { margin-top: 88px; }
     .mechanism { padding: 30px 24px 34px; border-radius: 22px; }
-    .fit { padding: 28px 24px; border-radius: 22px; }
-    .shifts li { grid-template-columns: 2.2rem 1fr; padding: 20px 0; }
+    .shifts li { grid-template-columns: 64px 1fr; gap: 16px; padding: 22px 0; }
+    .shifts .num { font-size: 2.6rem; }
+    .shifts .txt { font-size: 1.15rem; }
   }
 </style>
 </head>
@@ -351,46 +378,42 @@
     </section>
 
     <section>
-      <h2>The 13 shifts</h2>
+      <h2>What do we change in a reprogramming session?</h2>
       <ol class="shifts">
-        <li><span class="num">01</span><span class="txt"><strong>Rejection armor.</strong> Rejection stops landing as a verdict on you. Your confidence holds either way.</span></li>
-        <li><span class="num">02</span><span class="txt"><strong>Approval off-switch.</strong> Your value stops depending on attention, likes, or who noticed you today.</span></li>
-        <li><span class="num">03</span><span class="txt"><strong>Physical calm.</strong> Steady pulse, relaxed muscles, calm breathing in new social situations.</span></li>
-        <li><span class="num">04</span><span class="txt"><strong>Nervous laughter gone.</strong> The nervous laugh turns off, and people hear the real one.</span></li>
-        <li><span class="num">05</span><span class="txt"><strong>No performance.</strong> You stop playing a version of yourself and show up as you are.</span></li>
-        <li><span class="num">06</span><span class="txt"><strong>Fluid speech.</strong> Words arrive as you speak, clear and quick, without rehearsal.</span></li>
-        <li><span class="num">07</span><span class="txt"><strong>Impostor feeling gone.</strong> You stop feeling like a fraud among confident people.</span></li>
-        <li><span class="num">08</span><span class="txt"><strong>Natural charm.</strong> People feel good around you without you working the room.</span></li>
-        <li><span class="num">09</span><span class="txt"><strong>Serenity under pressure.</strong> Calm and firm in any conversation, including the hard ones.</span></li>
-        <li><span class="num">10</span><span class="txt"><strong>Starting conversations.</strong> You can open a conversation with anyone, anywhere, without planning the first line.</span></li>
-        <li><span class="num">11</span><span class="txt"><strong>Voice and body.</strong> Stronger voice, steady eye contact, body language that matches your words.</span></li>
-        <li><span class="num">12</span><span class="txt"><strong>Center of attention.</strong> All eyes on you, and you stay calm and enjoy it.</span></li>
-        <li><span class="num">13</span><span class="txt"><strong>Genuine interest.</strong> You talk to people to know them, with nothing to win, so nothing is at stake.</span></li>
+        <li><span class="num">01</span><span class="txt">Armoring Against Rejection</span></li>
+        <li><span class="num">02</span><span class="txt">Eliminating the Need for Admiration</span></li>
+        <li><span class="num">03</span><span class="txt">Eliminating Physical Nervousness</span></li>
+        <li><span class="num">04</span><span class="txt">Eliminating Nervous Laughter</span></li>
+        <li><span class="num">05</span><span class="txt">Authenticity and Naturalness</span></li>
+        <li><span class="num">06</span><span class="txt">Communication</span></li>
+        <li><span class="num">07</span><span class="txt">Eliminating Impostor Syndrome</span></li>
+        <li><span class="num">08</span><span class="txt">Charisma and Charm</span></li>
+        <li><span class="num">09</span><span class="txt">Serenity</span></li>
+        <li><span class="num">10</span><span class="txt">Starting Conversations</span></li>
+        <li><span class="num">11</span><span class="txt">Projecting Confidence</span></li>
+        <li><span class="num">12</span><span class="txt">Center of Attention</span></li>
+        <li><span class="num">13</span><span class="txt">Focusing Only on Getting to Know People</span></li>
       </ol>
-    </section>
-
-    <section>
-      <p class="fit">This is for doctors who are tired of shrinking in social situations and want to become the person people are glad to see.<br>It is not for doctors looking for scripts, tricks, or a performance.<br>The protocol changes what you believe, your identity, so there is nothing to perform.</p>
     </section>
 
     <section class="faq">
       <h2>Questions</h2>
-      <div class="qa">
-        <h3 class="q">Do I have to fake confidence?</h3>
+      <details class="qa">
+        <summary class="q">Do I have to fake confidence?</summary>
         <p class="a">The protocol targets the beliefs that make you perform in the first place.<br>As those beliefs go, calm becomes automatic and you stop managing impressions.</p>
-      </div>
-      <div class="qa">
-        <h3 class="q">How fast will I notice?</h3>
+      </details>
+      <details class="qa">
+        <summary class="q">How fast will I notice?</summary>
         <p class="a">The goal of the first session is a noticeable change in how your body reacts in social situations.<br>If it doesn't happen, the guarantee covers you.</p>
-      </div>
-      <div class="qa">
-        <h3 class="q">I'm an introvert. Does this work?</h3>
+      </details>
+      <details class="qa">
+        <summary class="q">I'm an introvert. Does this work?</summary>
         <p class="a">Yes.<br>Quiet people can hold a room.<br>The protocol removes the nervousness and approval-seeking that make social situations expensive, and leaves your personality intact.</p>
-      </div>
-      <div class="qa">
-        <h3 class="q">Will I turn into someone else?</h3>
+      </details>
+      <details class="qa">
+        <summary class="q">Will I turn into someone else?</summary>
         <p class="a">You stay yourself.<br>The beliefs that change are the ones making you shrink.</p>
-      </div>
+      </details>
     </section>
 
     <section class="final">
@@ -442,6 +465,19 @@
         sections.forEach(function (section) {
           section.classList.add("reveal");
           io.observe(section);
+        });
+
+        var itemIO = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              itemIO.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.35 });
+        document.querySelectorAll(".shifts li").forEach(function (item) {
+          item.classList.add("item");
+          itemIO.observe(item);
         });
       }
 
