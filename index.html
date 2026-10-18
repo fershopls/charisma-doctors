@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>From Shy Doctor to the Center of Attention</title>
+<title>Instant Charisma | Become Easy-Talker</title>
+<meta name="description" content="Done-for-you subconscious reprogramming of the beliefs behind social nervousness. Built for doctors.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,131 +20,331 @@
   :root {
     --ink: #0a2b4c;
     --ink-strong: #061d35;
-    --gray: #647281;
+    --body: #33404e;
+    --gray: #68737f;
+    --line: #e6eaee;
+    --soft: #f5f6f7;
     --paper: #ffffff;
   }
   * { box-sizing: border-box; }
   html { color-scheme: light; -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    min-height: 100vh;
-    display: flex;
     background: var(--paper);
     color: var(--ink);
-    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  main {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    padding: 56px 24px;
-    text-align: center;
+  h2, h3, .btn, .num, .q {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
   }
 
-  h1 {
-    margin: 0 0 40px;
-    display: grid;
-    gap: 10px;
-    font-size: clamp(2.2rem, 6vw, 3.6rem);
-    line-height: 1.06;
-    letter-spacing: -.035em;
-    font-weight: 800;
-    text-wrap: balance;
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 10;
   }
-  h1 .from { color: var(--gray); }
-  h1 .to { color: var(--ink); }
-
-  ul {
-    list-style: none;
-    width: fit-content;
-    margin: 0 auto 32px;
-    padding: 0;
-    display: grid;
-    gap: 14px;
-    text-align: left;
-  }
-  li {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    font-size: 1.05rem;
-    line-height: 1.55;
-    font-weight: 500;
-  }
-  li::before {
-    content: "";
-    flex-shrink: 0;
-    width: 6px;
-    height: 6px;
-    margin-top: .62em;
+  .progress span {
+    display: block;
+    height: 100%;
+    width: 0;
     background: var(--ink);
   }
 
-  .offer {
-    margin: 0 auto 30px;
-    max-width: 42ch;
-    color: var(--gray);
-    font-size: 1.05rem;
-    line-height: 1.6;
-    font-weight: 500;
+  main {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 96px 24px 112px;
   }
+
+  .badge {
+    margin-bottom: 18px;
+    color: var(--gray);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    transition: opacity .3s ease;
+  }
+  .badge.swap { opacity: 0; }
+
+  h1 {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(2.2rem, 6.4vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+  .h1-sub {
+    display: block;
+    margin-top: 8px;
+    color: var(--gray);
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: inherit;
+  }
+  .h1-sub b { color: var(--ink); font-weight: 700; }
+
+  .intro {
+    margin: 28px 0 0;
+    max-width: 44ch;
+    color: var(--body);
+    font-size: 1.28rem;
+    line-height: 1.65;
+  }
+  .intro-note {
+    margin-top: 20px;
+    font-size: 1.08rem;
+    line-height: 1.6;
+  }
+
   .btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 30px;
+    gap: 8px;
+    margin-top: 32px;
+    padding: 15px 30px;
     background: var(--ink);
     color: #fff;
     text-decoration: none;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    transition: background .15s ease;
+    font-size: .88rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    border-radius: 999px;
+    transition: background .15s ease, transform .15s ease;
   }
-  .btn:hover { background: var(--ink-strong); }
+  .btn:hover { background: var(--ink-strong); transform: translateY(-1px); }
   .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
-  .tagline {
-    margin: 48px 0 0;
-    color: var(--gray);
-    font-size: .95rem;
-    font-style: italic;
+  section { margin-top: 96px; }
+  section::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 2px;
+    margin-bottom: 28px;
+    background: var(--ink);
   }
-  .closing {
-    margin: 14px auto 0;
-    max-width: 46ch;
-    color: var(--gray);
-    font-size: 1.05rem;
+  h2 {
+    margin: 0 0 22px;
+    max-width: 26ch;
+    font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+    line-height: 1.14;
+    letter-spacing: -.03em;
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  p {
+    margin: 0 0 26px;
+    color: var(--body);
+    font-size: 1.2rem;
+    line-height: 1.75;
+    text-wrap: pretty;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  .shifts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .shifts li {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 12px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .shifts .num {
+    color: #9aa3ad;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 2;
+    font-variant-numeric: tabular-nums;
+  }
+  .shifts .txt {
+    color: var(--body);
+    font-size: 1.15rem;
     line-height: 1.6;
-    font-weight: 500;
+  }
+  .shifts strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--ink);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.16rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .fit {
+    margin: 0;
+    padding: 34px 38px;
+    background: var(--soft);
+    border-radius: 18px;
+    color: var(--ink);
+    font-size: 1.25rem;
+    line-height: 1.65;
+    text-wrap: pretty;
+  }
+
+  .faq .qa {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .faq .qa:last-child { border-bottom: 1px solid var(--line); }
+  .q {
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .a {
+    margin: 0;
+    color: var(--body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .final { text-align: center; }
+  .final::before { margin-left: auto; margin-right: auto; }
+  .final h2 { margin: 0 auto 28px; max-width: none; }
+  .final .btn { margin-top: 0; }
+
+  @media (max-width: 680px) {
+    main { padding: 64px 20px 88px; }
+    section { margin-top: 76px; }
+    .fit { padding: 26px 24px; }
   }
 </style>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"><span id="bar"></span></div>
   <main>
-    <h1>
-      <span class="from">From shy doctor</span>
-      <span class="to">To the center of attention</span>
-    </h1>
+    <header class="hero">
+      <div class="badge" aria-live="polite"><span id="word-a">Instant</span> <span id="word-b">Charisma</span></div>
+      <h1>Eliminate Your Social Nervousness<span class="h1-sub">in days, <b>not years</b></span></h1>
+      <a class="btn" href="https://wa.me/524424392916" target="_blank" rel="noopener">
+        Book session
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="intro intro-note">
+        We take care of everything.<br>
+        Done-for-you Subconscious Reprogramming.</p>
+    </header>
 
-    <ul>
-      <li>Interact with people easily</li>
-      <li>Make men and women enjoy talking to you</li>
-      <li>Get the right words to say at every moment</li>
-    </ul>
+    <section>
+      <h2>You are good at medicine. Nobody trained you for a room full of strangers.</h2>
+      <p>You know the pattern.<br>Someone starts talking and your mind goes blank.<br>You laugh nervously.<br>You leave and replay every sentence on the drive home.</p>
+      <p>You watch the easy talkers work the room, and the person you noticed notices them instead.</p>
+      <p>Twenty minutes of small talk costs you more energy than a full day of work.<br>You have called yourself introverted, shy, timid, or not a people person.</p>
+    </section>
 
-    <p class="offer">All done-for-you with subconscious reprogramming</p>
+    <section>
+      <h2>The pattern comes from learned beliefs.</h2>
+      <p>They were installed slowly, they run automatically, and they fire in your body before you get a chance to think.<br>Willpower does not touch them.</p>
+      <p>The Charisma Doctors Protocol is done-for-you subconscious reprogramming built for doctors.<br>We work through the 13 belief areas that drive social confidence, one at a time.<br>For each area, we find the belief producing the reaction, remove it, and install the replacement.<br>You sit back and do nothing, we take care of everything.</p>
+    </section>
 
-    <a class="btn" href="https://wa.me/524424392916" target="_blank" rel="noopener">
-      Book Session
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
+    <section>
+      <h2>The 13 shifts</h2>
+      <ol class="shifts">
+        <li><span class="num">01</span><span class="txt"><strong>Rejection armor.</strong> Rejection stops landing as a verdict on you. Your confidence holds either way.</span></li>
+        <li><span class="num">02</span><span class="txt"><strong>Approval off-switch.</strong> Your value stops depending on attention, likes, or who noticed you today.</span></li>
+        <li><span class="num">03</span><span class="txt"><strong>Physical calm.</strong> Steady pulse, relaxed muscles, calm breathing in new social situations.</span></li>
+        <li><span class="num">04</span><span class="txt"><strong>Nervous laughter gone.</strong> The nervous laugh turns off, and people hear the real one.</span></li>
+        <li><span class="num">05</span><span class="txt"><strong>No performance.</strong> You stop playing a version of yourself and show up as you are.</span></li>
+        <li><span class="num">06</span><span class="txt"><strong>Fluid speech.</strong> Words arrive as you speak, clear and quick, without rehearsal.</span></li>
+        <li><span class="num">07</span><span class="txt"><strong>Impostor feeling gone.</strong> You stop feeling like a fraud among confident people.</span></li>
+        <li><span class="num">08</span><span class="txt"><strong>Natural charm.</strong> People feel good around you without you working the room.</span></li>
+        <li><span class="num">09</span><span class="txt"><strong>Serenity under pressure.</strong> Calm and firm in any conversation, including the hard ones.</span></li>
+        <li><span class="num">10</span><span class="txt"><strong>Starting conversations.</strong> You can open a conversation with anyone, anywhere, without planning the first line.</span></li>
+        <li><span class="num">11</span><span class="txt"><strong>Voice and body.</strong> Stronger voice, steady eye contact, body language that matches your words.</span></li>
+        <li><span class="num">12</span><span class="txt"><strong>Center of attention.</strong> All eyes on you, and you stay calm and enjoy it.</span></li>
+        <li><span class="num">13</span><span class="txt"><strong>Genuine interest.</strong> You talk to people to know them, with nothing to win, so nothing is at stake.</span></li>
+      </ol>
+    </section>
 
-    <p class="tagline">It works like a charm!</p>
-    <p class="closing">We take care of everything, you just relax and enjoy the changes (they are pretty obvious)</p>
+    <section>
+      <p class="fit">This is for doctors who are tired of shrinking in social situations and want to become the person people are glad to see.<br>It is not for doctors looking for scripts, tricks, or a performance.<br>The protocol changes what you believe, your identity, so there is nothing to perform.</p>
+    </section>
+
+    <section class="faq">
+      <h2>Questions</h2>
+      <div class="qa">
+        <h3 class="q">Do I have to fake confidence?</h3>
+        <p class="a">The protocol targets the beliefs that make you perform in the first place.<br>As those beliefs go, calm becomes automatic and you stop managing impressions.</p>
+      </div>
+      <div class="qa">
+        <h3 class="q">How fast will I notice?</h3>
+        <p class="a">The goal of the first session is a noticeable change in how your body reacts in social situations.<br>If it doesn't happen, the guarantee covers you.</p>
+      </div>
+      <div class="qa">
+        <h3 class="q">I'm an introvert. Does this work?</h3>
+        <p class="a">Yes.<br>Quiet people can hold a room.<br>The protocol removes the nervousness and approval-seeking that make social situations expensive, and leaves your personality intact.</p>
+      </div>
+      <div class="qa">
+        <h3 class="q">Will I turn into someone else?</h3>
+        <p class="a">You stay yourself.<br>The beliefs that change are the ones making you shrink.</p>
+      </div>
+    </section>
+
+    <section class="final">
+      <h2>Ready to stop shrinking?</h2>
+      <a class="btn" href="https://wa.me/524424392916" target="_blank" rel="noopener">
+        Book session
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
   </main>
+  <script>
+    (function () {
+      var pairs = [
+        ["Instant", "Charisma"],
+        ["Become", "Easy-Talker"],
+        ["Natural", "Magnetism"],
+        ["Effortless", "Charm"],
+        ["Social", "Confidence"],
+        ["Speak", "With Ease"],
+        ["Magnetic", "Presence"]
+      ];
+      var a = document.getElementById("word-a");
+      var b = document.getElementById("word-b");
+      var badge = document.querySelector(".badge");
+      var i = 0;
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        setInterval(function () {
+          badge.classList.add("swap");
+          setTimeout(function () {
+            i = (i + 1) % pairs.length;
+            a.textContent = pairs[i][0];
+            b.textContent = pairs[i][1];
+            badge.classList.remove("swap");
+          }, 350);
+        }, 1800);
+      }
+
+      var bar = document.getElementById("bar");
+      function progress() {
+        var doc = document.documentElement;
+        var max = doc.scrollHeight - doc.clientHeight;
+        bar.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + "%";
+      }
+      window.addEventListener("scroll", progress, { passive: true });
+      window.addEventListener("resize", progress);
+      progress();
+    })();
+  </script>
 </body>
 </html>
