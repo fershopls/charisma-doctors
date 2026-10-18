@@ -34,19 +34,8 @@ The Charisma Doctors Protocol is done-for-you subconscious reprogramming built f
 12. **Center of attention.** All eyes on you, and you stay calm and enjoy it.
 13. **Genuine interest.** You talk to people to know them, with nothing to win, so nothing is at stake.
 
-**The Ten-Person Day.** Cross ten people, start nine conversations. A daily routine that turns the protocol into real-world practice.
 
-**The Voice and Presence Tune-Up.** Drills for volume, eye contact, and relaxed body language, taken straight from the model.
-
-**The Emergency Calm Reset.** A 60-second protocol for the moments before a presentation or a hard conversation.
-
-These come included with your session.
-
-**The first-session guarantee.** Book the session. If you don't notice a change in how your body reacts in social situations, tell us within 7 days and we refund the session in full. One message is enough.
-
-Each protocol is built one-to-one, so we only open a handful of slots each month. When they fill, the next openings are the following month.
-
-This is for doctors who are tired of shrinking in social situations and want to become the person people are glad to see. It is not for doctors looking for scripts, tricks, or a performance. The protocol changes what you believe, so there is nothing to perform.
+This is for doctors who are tired of shrinking in social situations and want to become the person people are glad to see. It is not for doctors looking for scripts, tricks, or a performance. The protocol changes what you believe, your identity, so there is nothing to perform.
 
 **Do I have to fake confidence?**
 The protocol targets the beliefs that make you perform in the first place. As those beliefs go, calm becomes automatic and you stop managing impressions.
@@ -60,11 +49,7 @@ Yes. Quiet people can hold a room. The protocol removes the nervousness and appr
 **Will I turn into someone else?**
 You stay yourself. The beliefs that change are the ones making you shrink.
 
-**What happens in a session?**
-You and the practitioner go through the belief areas that matter for you. The practitioner guides the whole process, and you don't need to prepare anything.
-
 **Ready to stop shrinking?**
 
-Message us on WhatsApp and tell us one social situation you want to handle differently. We'll reply with the next available session and current pricing.
 
-[**Book your session on WhatsApp →**](https://wa.me/524424392916)
+[**Book session →**](https://wa.me/524424392916)
