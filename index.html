@@ -22,8 +22,8 @@
     --bg: #060a10;
     --surface: rgba(255, 255, 255, .035);
     --text: #f2f5f2;
-    --body: #b9c2c9;
-    --muted: #93a0ab;
+    --body: #e3e7ea;
+    --muted: #c2cad2;
     --accent: #d7ff4d;
     --accent-ink: #0a0f05;
     --line: rgba(255, 255, 255, .1);
@@ -173,14 +173,6 @@
   .btn:hover svg { transform: translate(2px, -2px); }
   .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-  .intro-note {
-    margin: 20px 0 0;
-    color: var(--muted);
-    font-size: 1.05rem;
-    line-height: 1.6;
-    animation: rise .8s .34s ease both;
-  }
-
   section { margin-top: 120px; }
   section::before {
     content: "";
@@ -215,6 +207,7 @@
     border: 1px solid var(--line);
     border-radius: 28px;
   }
+  .mechanism + .mechanism { margin-top: 130px; }
   .mechanism::before { display: none; }
 
   .shifts {
@@ -322,7 +315,7 @@
   .reveal.in { opacity: 1; transform: none; }
 
   @media (prefers-reduced-motion: reduce) {
-    .badge, h1, .btn, .intro-note { animation: none; }
+    .badge, h1, .btn { animation: none; }
     .reveal { opacity: 1; transform: none; transition: none; }
   }
 
@@ -345,22 +338,16 @@
         Book session
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <p class="intro-note">
-        We take care of everything.<br>
-        Done-for-you Subconscious Reprogramming.</p>
     </header>
 
-    <section>
-      <h2>You are good at medicine. Nobody trained you for a room full of strangers.</h2>
-      <p>You know the pattern.<br>Someone starts talking and your mind goes blank.<br>You laugh nervously.<br>You leave and replay every sentence on the drive home.</p>
-      <p>You watch the easy talkers work the room, and the person you noticed notices them instead.</p>
-      <p>Twenty minutes of small talk costs you more energy than a full day of work.<br>You have called yourself introverted, shy, timid, or not a people person.</p>
+    <section class="mechanism">
+      <h2>How it works?</h2>
+      <p>We take care of everything.<br>Done-for-you Subconscious Reprogramming.</p>
     </section>
 
     <section class="mechanism">
-      <h2>The pattern comes from learned beliefs.</h2>
-      <p>They were installed slowly, they run automatically, and they fire in your body before you get a chance to think.<br>Willpower does not touch them.</p>
-      <p>The Charisma Doctors Protocol is done-for-you subconscious reprogramming built for doctors.<br>We work through the 13 belief areas that drive social confidence, one at a time.<br>For each area, we find the belief producing the reaction, remove it, and install the replacement.<br>You sit back and do nothing, we take care of everything.</p>
+      <h2>Subconscious Reprogramming?</h2>
+      <p>Social nervousness is a set of learned beliefs.<br>They fire automatically, before you get a chance to think.<br>We change those for you.</p>
     </section>
 
     <section>
