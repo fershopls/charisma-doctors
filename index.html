@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>From Shy Doctor to the Center of Attention</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a2b4c;
+    --ink-strong: #061d35;
+    --gray: #647281;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: light; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  main {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 56px 24px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 40px;
+    display: grid;
+    gap: 10px;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    line-height: 1.06;
+    letter-spacing: -.035em;
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  h1 .from { color: var(--gray); }
+  h1 .to { color: var(--ink); }
+
+  ul {
+    list-style: none;
+    width: fit-content;
+    margin: 0 auto 32px;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+    text-align: left;
+  }
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+  li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin-top: .62em;
+    background: var(--ink);
+  }
+
+  .offer {
+    margin: 0 auto 30px;
+    max-width: 42ch;
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    transition: background .15s ease;
+  }
+  .btn:hover { background: var(--ink-strong); }
+  .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  .tagline {
+    margin: 48px 0 0;
+    color: var(--gray);
+    font-size: .95rem;
+    font-style: italic;
+  }
+  .closing {
+    margin: 14px auto 0;
+    max-width: 46ch;
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>
+      <span class="from">From shy doctor</span>
+      <span class="to">To the center of attention</span>
+    </h1>
+
+    <ul>
+      <li>Interact with people easily</li>
+      <li>Make men and women enjoy talking to you</li>
+      <li>Get the right words to say at every moment</li>
+    </ul>
+
+    <p class="offer">All done-for-you with subconscious reprogramming</p>
+
+    <a class="btn" href="https://wa.me/4424392916" target="_blank" rel="noopener">
+      Book Session
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <p class="tagline">It works like a charm!</p>
+    <p class="closing">We take care of everything, you just relax and enjoy the changes (they are pretty obvious)</p>
+  </main>
+</body>
+</html>
